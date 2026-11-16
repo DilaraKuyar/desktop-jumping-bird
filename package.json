@@ -1,0 +1,16 @@
+{
+  "name": "desktop-jumping-bird",
+  "version": "1.0.0",
+  "description": "a bird animation which jumps and sings for desktop",
+  "main": "bird_animation.js",
+  "scripts": {
+    "start": "node -e \"require('child_process').spawn(require('electron'), ['.'], { detached: true, stdio: 'ignore' }).unref()\"",
+    "stop": "pkill -f 'Electron .' || true",
+    "build:mac": "electron-packager . Bird --platform=darwin --out=dist --overwrite",
+    "build:win": "electron-packager . Bird --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^33.0.0"
+  }
+}
