@@ -1,39 +1,101 @@
-# desktop jumping bird
+# Desktop Jumping Bird
 
-a small bird animation which jumps and sings on the bottom left corner of your desktop (right above the Dock / Taskbar).
+A small, interactive desktop bird that jumps, sings, and keeps you company while you work.
 
-### what it does?
+Inspired by my budgie **Kavurma**, the little bird in my GitHub profile picture. I created this project in his memory, combining my love for birds with software development.
 
-- sits quietly on the desktop and breathes slightly when it is still.
-- jumps at the same place, plays a bird sound and shows little music notes when you click on it.
-- stays behind other windows when you open something on top of it, and doesn't show up on full screen apps.
+## Preview
 
----
 
-### how to use (without coding) 
+https://github.com/user-attachments/assets/2f8e57c4-8963-491f-b7f0-babaaec46324
 
-you can download the ready app from the **Releases** section on the right side, unzip it and just double click on `Bird` to open.
+## Features
 
-sağ taraftaki **Releases** kısmından hazır uygulamayı indirip zip'ten çıkararak direkt çift tıklayıp açabilirsin.
+- Sits right above the Dock or Taskbar.
+- Gently breathes while idle.
+- Jumps and plays a bird sound when clicked.
+- Displays animated musical notes.
+- Stays behind other application windows.
+- Automatically hides when fullscreen applications are active.
 
-### how to run from code / koddan çalıştırma
+## Installation
 
-if you cloned the repo:
+No coding required.
+
+1. Go to the **Releases** section.
+2. Download the application for your operating system, if available.
+3. Extract the ZIP file.
+4. Double-click `Bird` to launch.
+
+### macOS Security Notice
+
+macOS may display a security warning because the application is not notarized by Apple.
+
+If you encounter this issue and trust the application, move `Bird.app` to your Downloads folder and run:
+
+```bash
+xattr -dr com.apple.quarantine ~/Downloads/Bird.app
+```
+
+Then open the application normally.
+
+## Run from Source
+
+Requirements: Node.js and npm.
+
+Clone this repository and navigate to the project directory.
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Start the application:
+
+```bash
 npm start
 ```
 
-to close the bird:
+Stop the application:
 
 ```bash
 npm stop
 ```
 
-to build the `.app` or `.exe` yourself / uygulamayı paketlemek için:
+## Build
+
+Build for macOS:
 
 ```bash
 npm run build:mac
+```
+
+Build for Windows:
+
+```bash
 npm run build:win
 ```
+
+## Roadmap
+
+- [ ] Movement along the Dock and Taskbar
+- [ ] Interactive jumping
+- [ ] Autonomous walking
+- [ ] Selectable behavior modes
+- [ ] More animations and interactions
+
+## Contributing
+
+Feel free to open an issue for suggestions, feature requests, or bug reports. Pull requests are also welcome.
+
+If you like the project, consider giving it a star!
+
+---
+
+In loving memory of Kavurma. ♡
+
