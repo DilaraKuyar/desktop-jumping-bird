@@ -2,7 +2,7 @@
 
 a small bird animation which jumps and sings on the bottom left corner of your desktop (right above the Dock / Taskbar).
 
-### what it does / ne yapıyor
+### what it does?
 
 - sits quietly on the desktop and breathes slightly when it is still.
 - jumps at the same place, plays a bird sound and shows little music notes when you click on it.
